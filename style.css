@@ -1,0 +1,378 @@
+/* Reset */
+*{
+    /*alternative box model*/
+    box-sizing: border-box;
+    
+    /* Reset padding and margin on all elements */
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Typography */
+html{
+    font-size: 18px;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    line-height: 1.55;
+    color: rgb(0, 0, 0);
+}
+
+
+h1{
+    font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: rgba(22, 22, 22, 0.8);
+}
+.lineUp{
+    animation: 3s anim-lineUp ease-out;
+    flex-wrap: wrap;
+}
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+h3.large{
+    font-size: 3.15rem;
+}
+/*lets get in touch*/
+.dark h3 {
+    color: rgb(195, 173, 173);
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+p.section-intro{
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/*contact-us*/
+.dark p.section-intro{
+    color: rgb(195, 173, 173);
+}
+
+p.number{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: rgb(0, 0, 0,.5);
+}
+
+p.large{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+
+a{
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+}
+
+a:hover{
+    color: black;
+}
+
+form input,
+form textarea,
+form button{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+/*container*/
+.container {
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.container.small{
+    width: 60%;
+    max-width: 35rem;
+}
+
+/*header*/
+#main-header,
+section {
+    padding: 13rem 0;
+    text-align: center;
+    background-color: rgb(127, 128, 128);
+
+}
+
+#main-header h1{
+    margin: 7rem 0  1rem 0;
+}
+
+
+#main-header h2{
+    margin-bottom: 7rem;
+}
+/*choose ur own pet*/
+.btn {
+    padding: 1.3rem 3.5rem;
+    border: 1px solid rgb(31, 35, 36);
+    font-weight: 700;
+}
+/*adopt-me*/
+.btn:hover{
+    background-color: rgb(82, 91, 93);
+    border-color: black;
+    color: rgb(195, 173, 173);
+}
+
+/*dogs-selection*/
+#our-dogs{
+    background-color: rgb(195, 191, 173);
+}
+section header{
+    margin-bottom: 3.5rem;
+}
+
+h3+p{
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;/*repear(3,1fr)*/
+    gap: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.gallery div{
+    text-align: start;
+}
+
+.gallery img{
+    margin-bottom: 1.3rem;
+}
+
+/*contact*/
+.dark{
+    background-color: rgb(131, 136, 135);
+}
+
+/*name-email-address*/
+.dark label{
+     color: rgb(195, 173, 173);
+}
+
+form div{
+    margin-bottom: 1.75rem;
+}
+
+form label{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: start;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea{
+    background-color: rgb(68, 76, 82);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    color: rgb(250, 253, 253);
+    resize: none;
+}
+
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background-color: rgba(1, 1, 13, 0.278);
+}
+
+form button{
+    width: 100%;
+    cursor: pointer;
+}
+
+.dark .btn{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    color: rgba(1, 1, 1, 0.8);/*send message*/
+}
+
+.dark .btn:hover{
+    background-color:rgb(195, 173, 173);
+    color: black;
+}
+
+p.muted{
+    color: azure;
+}
+
+form button +p{
+    margin-top: 1.75rem;
+}
+
+/*store*/
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+p.large + .social-icons{
+    margin-top: 7rem;
+}
+
+footer{
+    padding: 5rem 0;
+    background-color: rgb(127, 128, 128);
+}
+
+footer p{
+    text-align: center;
+}
+
+input[type="text"] {
+    border-radius: 16px 16px 16px 16px;
+}
+input[type="email"] {
+    border-radius: 16px 16px 16px 16px;
+}
+input[type="submit"] {
+    border-radius: 16px 16px 16px 16px;
+}
+
+.textarea{
+    border-radius:16px 16px 16px 16px ;
+}
+
+@media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  }
+@media screen and (max-width:600px) {
+   h1,
+   h3.large{
+    font-size: 1.3rem;
+   }
+   h2,
+   p.large{
+    font-size: 1.3rem;
+   }
+   h3{
+    font-size: 1.3rem;
+   }
+   .container.small{
+    width: 85%;
+   }
+   #main-header,
+   section{
+    padding: 6rem 0;
+   }
+   footer{
+    padding: 2.5rem 0;
+   }
+   p.large + .social-icons{
+    margin-top: 2.5rem;
+}
+  #main-header h1{
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width:800px){
+    .gallery{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:800px){
+    .gallery p,h4{
+        font-size: small;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .dark {
+      width: 100%;
+      height: auto;
+      font-size: x-small;
+    }
+  }
+  @media (max-width: 767px) {
+    .container img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .btn {
+      font-size: 12px;
+      padding: 5px 10px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 600px){
+    .social-icons{
+        font-size: small;
+    }
+  }

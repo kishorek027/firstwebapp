@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container">
+				<a href=""><img src="logod1.svg" alt="logo" width="85" height="85"></a>
+				<h1 data-aos="fade-down"
+				data-aos-easing="linear"
+				data-aos-duration="1500">Adopted dogs</h1>
+				<h2 class="lineUp">We love creating a home for Adopting a Homeless Dog's</h2>	
+				<a href="#our-dogs" class="btn" data-aos="fade-up">Choose your own pet</a>
+			</div>
+		</header>
+
+		<section id="our-dogs">
+			<div class="container">
+				<header>
+					<p class="section-intro" data-aos="fade-up">The selection</p>
+					<h3 data-aos="fade-up">our-dogs</h3>
+					<p data-aos="fade-up">They require a rooftop as much as you and I do. Adopt Pets
+						There is no place like home! Adopt Pets</p>
+				</header>
+
+				<div class="gallery" data-aos="fade-up">
+					<div>
+						<img src="imgd1.jpg" height=" 500" width="250" alt="dog">
+						<p class="number">01</p>
+						<h4>jacky</h4>
+						<p>Its a Male dog</p>
+						<button class="btn">Adopt Me</button>
+					</div>
+					<div>
+						<img src="imgd2.jpg" height=" 500" width="250"  alt="dog">
+						<p class="number">02</p>
+						<h4>clara</h4>
+						<p>Its a Female dog</p>
+						<button class="btn">Adopt Me</button>
+					</div>
+					<div>
+						<img src="imgd3.jpg" height=" 500" width="250" alt="dog">
+						<p class="number">03</p>
+						<h4>nova</h4>
+						<p>Its a Female dog</p>
+						<button class="btn">Adopt Me</button>
+					</div>
+				</div>
+
+				<p>Interested in Adopting a Homeless Dog? <a href="#contact">Send us a message</a> or 
+				<a href="#store">visit our Home</a></p>
+			</div>
+		</section>
+
+		<section id="contact" class="dark">
+			<div class="container small">
+				<header>
+					<p class="section-intro">Contact Us</p>
+					<h3>Lets Get in Touch</h3>
+				</header>
+
+				<form name="myform1" action="details.php" method="post">
+					<div>
+						<label for="contactname">Name</label>
+						<input type="text" name="contactname" placeholder="enter your name" id="contactname" required="">
+			        </div>
+					<div>
+						<label for="contactemail">Email adrress</label>
+						<input type="email" name="contactmail" placeholder="enter your email" id="contactmail" required="">
+			        </div>
+					<div>
+						<label for="contact-message">Message</label>
+						<textarea name="contactmessage" placeholder="send us a message" id="contactmessage" required="" cols="30" rows="10">
+						</textarea>
+					</div>
+					<div>
+						<input type="submit" name="submit">
+						<p class="muted"><em>All fiels are required. We'll get back to you soon as possible.</em></p>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section id="store">
+			<div class="container">
+				<p class="section-intro" data-aos="fade-up">Visit Our Home</p>
+				<h3 class="large" data-aos="fade-up">(999) 657-0123</h3>
+				<p class="large" data-aos="fade-up">55,Sindhan nagar,4th street,erode</p>
+
+
+				<ul class="social-icons">
+					<li>
+						<a href="" data-aos="fade-up"><img src="icon-twitter.svg" alt="twitter"></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/__kishorek/" data-aos="fade-up"><img src="icons-instagram.svg" alt="instagram"></a>
+					</li>
+					<li>
+						<a href="https://wa.me/+918870193295" data-aos="fade-up"><img src="icons-whatsapp (2).svg" alt="whatsapp"></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container small">
+			<p>&copy; All Copy Rights Reserved</p>
+		    </div>
+		</footer>
+	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	 <script>
+		AOS.init({
+			duration:3000
+		});
+	 </script>
+	</body>
+</html>
